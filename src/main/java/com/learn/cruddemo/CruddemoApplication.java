@@ -23,9 +23,9 @@ public class CruddemoApplication {
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO){
 		return runner -> {
 //			createSrudent(studentDAO);
-			createMultipleStudent(studentDAO);
+//			createMultipleStudent(studentDAO);
 //			readStudent(studentDAO);
-//			findAll(studentDAO);
+			findAll(studentDAO);
 //			findByLastNameWithQuery(studentDAO);
 //			updateFirstName(studentDAO);
 //			delete(studentDAO);
@@ -36,6 +36,7 @@ public class CruddemoApplication {
 
 	private void deleteAllStudent(StudentDAO studentDAO) {
 		System.out.println(studentDAO.deleteAll());
+		System.out.println("All deleted");
 	}
 
 	private void delete(StudentDAO studentDAO) {
